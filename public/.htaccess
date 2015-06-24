@@ -1,0 +1,9 @@
+# 1. flip on apache's rewrite module
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php? [L]
+
+

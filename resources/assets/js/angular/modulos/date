@@ -1,0 +1,48 @@
+
+angular.module('yourmodule').filter('date', function($filter)
+{
+ return function(input)
+ {
+  if(input == null){ return ""; } 
+ 
+  if( your condtion )
+  {
+   var _date = $filter('date')(new Date(input), 'MMM dd yyyy');
+  }
+  else {
+    var _date = $filter('date')(new Date(input), 'MM dd yyyy');
+  }
+ 
+  return _date.toUpperCase();
+
+ };
+});
+
+
+angular.module('yourmodule').filter('time', function($filter)
+{
+ return function(input)
+ {
+  if(input == null){ return ""; } 
+ 
+  var _date = $filter('date')(new Date(input), 'HH:mm:ss');
+ 
+  return _date.toUpperCase();
+
+ };
+});
+
+
+angular.module('yourmodule').filter('datetime', function($filter)
+{
+ return function(input)
+ {
+  if(input == null){ return ""; } 
+ 
+  var _date = $filter('date')(new Date(input),
+                              'MMM dd yyyy - HH:mm:ss');
+ 
+  return _date.toUpperCase();
+
+ };
+});
