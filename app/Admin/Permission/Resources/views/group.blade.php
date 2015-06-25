@@ -74,7 +74,15 @@
 		</div>
 		<div class="col-sm-6">
 			<div class="panel panel-default">
-				<div class="panel-heading"><input type="text" ng-model="permissionFilter" class="form-control" placeholder="Filtrar lista de permissões"></div>
+				<div class="panel-heading">
+					<div class="input-group">
+	                <span class="input-group-addon">
+	                    <i class="glyphicon glyphicon-search"></i>
+	                </span>
+	                    <input type="search" placeholder="Filtrar permissões"
+	                           ng-model="permissionFilter" class="form-control">
+	                </div>
+                </div>
 				<div class="panel-heading">Permissões:</div>
 				<div class="panel-body">
 					<div class="form-group col-sm-12">
