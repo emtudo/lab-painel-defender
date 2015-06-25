@@ -48,32 +48,34 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav" ng-controller="geralController">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                       aria-expanded="false">MENU<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class="dropdown-submenu">Opção X - Teste
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Configurações
-                        <span class="glyphicon glyphicon-adjust" aria-hidden="true"></span><span
-                                class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class="dropdown-submenu">
-                            <a tabindex="0" data-toggle="dropdown">Permissões</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{!! route('admin.permission.group.create') !!}">Novo grupo de
-                                        permissões</a></li>
-                                <li><a href="{!! route('admin.permission.resetall') !!}">Reconfigurar todos</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            @if(!Auth::guest())
+                <ul class="nav navbar-nav" ng-controller="geralController">
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false">MENU<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-submenu">Opção X - Teste
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Configurações
+                            <span class="glyphicon glyphicon-adjust" aria-hidden="true"></span><span
+                                    class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-submenu">
+                                <a tabindex="0" data-toggle="dropdown">Permissões</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{!! route('admin.permission.group.create') !!}">Novo grupo de
+                                            permissões</a></li>
+                                    <li><a href="{!! route('admin.permission.resetall') !!}">Reconfigurar todos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            @endif
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
                     <li><a href="{{ url('/auth/login') }}">Login</a></li>
