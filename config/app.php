@@ -141,6 +141,7 @@ return [
         ResultSystems\Emtudo\Core\Providers\AppServiceProvider::class,
         ResultSystems\Emtudo\Core\Providers\EventServiceProvider::class,
         ResultSystems\Emtudo\Core\Providers\RouteServiceProvider::class,
+        ResultSystems\Emtudo\Core\Providers\GeneratorServiceProvider::class,
 
         // other providers ommited
         'Artesaos\Defender\Providers\DefenderServiceProvider',
