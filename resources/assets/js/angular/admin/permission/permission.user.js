@@ -49,16 +49,8 @@ app.controller('appPermissionUserController', ['$scope', '$http', '$filter', fun
 				showSuccess('Permissões salvas com sucesso');
 				_token=data._token;
 			}).error(function(data, status, headers, config) {
-				$("#result").html(data);
-				if(typeof data === 'string' ) {
-					showError(data);
-				} else {
-					var r = '';
-					angular.forEach(data, function(value) {
-						r=r+value+"\n";
-					}, r);
-					showError(r);
-				};
+				//$("#result").html(data);
+				showError(data);
 			});
 		};
 		usersIds=[];
