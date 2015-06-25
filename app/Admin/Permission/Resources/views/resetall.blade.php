@@ -45,7 +45,4 @@
         </div>
         @include("person::details")
     </div>
-    <script>
-        $(".cloneButtons").clone().prependTo("#divSaveBottom");
-    </script>
 @endsection
