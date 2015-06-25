@@ -26,7 +26,7 @@
                                     <div class="checkbox">
                                         <label>
                                             <input type="checkbox" ng-model="resetPermissions"/> Apagar as permissões
-                                            existens
+                                            existentes
                                         </label>
                                     </div>
                                 </div>
