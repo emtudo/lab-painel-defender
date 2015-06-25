@@ -1,4 +1,4 @@
-# Um projeto painel de controle para o Artesões - defender
+# Um projeto painel de controle para o Artesaos Defender
 
 Uma ideia de como seria.
 
