@@ -30,7 +30,7 @@ Route::put('user/{id}', [
 	'can' => 'permission.resetall',
 	'any'=>true,
 	'as' => 'user.update',
-	'uses' => 'PermissionController@userUpdate',
+	'uses' => 'PermissionController@postResetall',
 ]);
 //Groups
 Route::group(['prefix' => 'group','as' => 'group.'],function(){

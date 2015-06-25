@@ -28,7 +28,8 @@ class RouteServiceProvider extends ServiceProvider
     {
         $router->pattern('user', '[0-9]+');
         $router->bind('user', function($value) {
-            return User::limit(1)
+            return User::where('id',$value)
+                ->limit(1)
                 ->first();
         });
         parent::boot($router);

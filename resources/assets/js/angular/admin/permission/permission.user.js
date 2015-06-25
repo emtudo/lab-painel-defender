@@ -45,7 +45,7 @@ app.controller('appPermissionUserController', ['$scope', '$http', '$filter', fun
 					'X-XSRF-TOKEN': _token
 				}
 			};
-			http.post(_url,dataObj,config).success(function(data){
+			http.put(_url,dataObj,config).success(function(data){
 				showSuccess('Permissões salvas com sucesso');
 				_token=data._token;
 			}).error(function(data, status, headers, config) {

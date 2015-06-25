@@ -2,12 +2,13 @@
 
 @section('content')
 <script>
-	var _url="{{ preg_replace('#^https?://([^/])+#', '',route('admin.permission.show.user')) }}";
+	var _url="{{ preg_replace('#^https?://([^/])+#', '',route('admin.permission.show.user',$user->id)) }}";
 	var _user=<?php echo $user; ?>;
 	var _permission=<?php echo $permission; ?>;
 	var _session=<?php echo $session; ?>;
 
 </script>
+<div id="result"></div>
 <div class="container-fluid hidden startHidden">
 	<div class="row">
 		<div class="col-sm-12">
