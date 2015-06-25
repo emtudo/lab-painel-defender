@@ -8,9 +8,9 @@
 				<div class="panel-heading">Result Systems!</div>
 
 				<div class="panel-body">
-					Usuário padrão com acesso total: admin@resultsystems.com<br>
+					Usuário padrão com acesso total: admin@result.systems<br>
 					senha: admin<br><br>
-					Usuário restrito: user@resultsystems.com<br>
+					Usuário restrito: user@result.systems<br>
 					senha: user<br>
 					<br>Você pode criar novos usuários<br>
 				</div>

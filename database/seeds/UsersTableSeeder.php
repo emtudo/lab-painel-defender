@@ -15,13 +15,13 @@ class UsersTableSeeder extends Seeder
     	ResultSystems\Emtudo\User\Models\User::insert([
     			[
     			'name'=>'Administrador do Sistema',
-    			'email'=>'admin@resultsystems.com',
+    			'email'=>'admin@result.systems',
     			'password'=>bcrypt('admin'),
     			'created_at'=>$date,
     			'updated_at'=>$date],
     			[
     			'name'=>'Usuário restrito',
-    			'email'=>'user@resultsystems.com',
+    			'email'=>'user@result.systems',
     			'password'=>bcrypt('user'),
     			'created_at'=>$date,
     			'updated_at'=>$date],
