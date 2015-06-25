@@ -38,8 +38,8 @@
                 <thead>
                 <tr>
                     <th></th>
-                    <th><a href ng-click="orderUser('Usuario')">Usuário</a></th>
-                    <th><a href ng-click="orderUser('Nome')">Nome</a></th>
+                    <th><a href ng-click="orderUser('email')">Usuário</a></th>
+                    <th><a href ng-click="orderUser('name')">Nome</a></th>
                     <th>Ação</th>
                 </tr>
                 </thead>
@@ -49,9 +49,9 @@
                                ng-model='user.selected'/>
                     </td>
                     <td>
-                        <a href ng-click="personDetails(user.contato)"
+                        <a href ng-click="personDetails(user.id)"
                            data-toggle="modal"
-                           data-target="#modelPersonDetalhe">@{{user.name}}</a>
+                           data-target="#modelPersonDetalhe">@{{user.email}}</a>
                     </td>
                     <td>
                         <a href ng-click="personDetails(user.contato)"
