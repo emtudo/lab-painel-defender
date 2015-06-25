@@ -19,7 +19,6 @@
 <body>
 <script>
 	_token='{{ csrf_token() }}';
-	_janela='<?=session_id();?>';
 </script>
 <div class="container">
 	<div class="loading text-center col-sm-12">
@@ -73,12 +72,6 @@
 					@else
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-
-							@if (isset($_SESSION['Usuario']['Tipo_Usuario']) && $_SESSION['Usuario']['Tipo_Usuario'] == 'adm')
-								ROOT
-							@else
-							{{ ucfirst(current(str_word_count(Auth::user()->name, 2, 'áàãâäÁÀÃÂÄéèẽêëÉÈẼÊËíìĩîïÍÌĨÎÏóòõôöÓÒÕÔÖúùũûüÚÙŨÛÜýỳỹŷÿÝỲỸŶŸçÇ') ))  }}
-							@endif
 							<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="/auth/logout">Logout</a></li>
