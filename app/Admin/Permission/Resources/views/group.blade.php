@@ -27,7 +27,15 @@
 				</div>
 			</div>
 			<div class="panel panel-default" ng-hide="group.selectSelected=='selected'">
-				<div class="panel-heading"><input type="text" ng-model="permissionGroupFilter" class="form-control" placeholder="Filtrar lista de grupos"></div>
+				<div class="panel-heading">
+					<div class="input-group">
+	                <span class="input-group-addon">
+	                    <i class="glyphicon glyphicon-search"></i>
+	                </span>
+                    <input type="search" placeholder="Filtrar lista de grupos"
+                           ng-model="permissionGroupFilter" class="form-control">
+                	</div>
+				</div>
 				<div class="panel-heading">Grupos de Permissões:</div>
 				<div class="panel-body">
 					<div class="form-group col-sm-12">
