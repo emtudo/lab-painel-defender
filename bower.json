@@ -1,0 +1,19 @@
+{
+  "name": "mini-app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/emtudo/lab-painel-defender",
+  "authors": [
+    "emtudo <emtudo@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
