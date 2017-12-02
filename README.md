@@ -1,4 +1,6 @@
-# Um projeto painel de controle para o Artesaos Defender
+# Não use este cdigo, eu só mantenho ele para lembrar de como eu programava antigamente.
+
+## Um projeto painel de controle para o Artesaos Defender
 
 Uma ideia de como seria.
 
